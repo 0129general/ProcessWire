@@ -12,9 +12,10 @@
 /** @var Pages $pages */
 /** @var Config $config */
 	
-$home = $pages->get('/'); /** @var HomePage $home */
+// $home = $pages->get('/'); /** @var HomePage $home */
 
-?><!DOCTYPE html>
+?>
+<!-- <!DOCTYPE html>
 <html lang="en">
 	<head id="html-head">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -52,4 +53,4 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		<?php endif; ?>
 	
 	</body>
-</html>
+</html> -->
