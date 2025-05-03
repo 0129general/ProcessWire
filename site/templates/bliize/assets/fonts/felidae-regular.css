@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Felidae';
+    src: url('Felidae-Regular.woff2') format('woff2'),
+        url('Felidae-Regular.woff') format('woff'),
+        url('Felidae-Regular.svg#Felidae-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

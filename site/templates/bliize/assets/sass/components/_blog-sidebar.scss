@@ -1,0 +1,265 @@
+/*------------------------------------
+	blog sidebar
+------------------------------------*/
+.blog-sidebar {
+	margin-left: auto;
+	max-width: 363px;
+
+	@include widther(992px) {}
+
+	@include media-query(991px) {
+		margin-top: 80px;
+		max-width: 400px;
+		margin-left: 0;
+	}
+
+	@include media-query(767px) {
+		margin-top: 60px;
+		max-width: 400px;
+	}
+
+	.widget {
+		border: 1px solid #E2E2E2;
+
+		h3 {
+			display: block;
+			color: #001635;
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 50px;
+			padding: 15px 30px;
+			margin-bottom: 0;
+			border-bottom: 1px solid #E2E2E2;
+			@media (max-width:575px) {
+				padding: 15px 20px;
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+	}
+
+	>.widget+.widget {
+		margin-top: 65px;
+	}
+
+
+	/*** search-widget ***/
+	.search-widget {
+		border: 0;
+
+		h3 {
+			padding-top: 0;
+			padding-left: 0;
+			padding-right: 0;
+			border: 0;
+		}
+
+		form div {
+			position: relative;
+		}
+
+		input {
+			background-color: transparent;
+			height: 70px;
+			padding: 6px 50px 6px 20px;
+			border: 0;
+			box-shadow: none;
+			@include transition-time(0.3s);
+			border: 1px solid #E2E2E2;
+			color: #626B72;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 30px;
+		}
+
+		input:focus {
+			background-color: transparentize($theme-primary-color, 0.9);
+		}
+
+		form button {
+			background: transparent;
+			font-size: 20px;
+			color: $white;
+			background-color: $black;
+			border: 0;
+			outline: 0;
+			position: absolute;
+			right: 10px;
+			top: 52%;
+			height: 50px;
+			line-height: 50px;
+			width: 50px;
+			@include translatingY();
+		}
+	}
+
+
+	/*** category-widget ***/
+	.category-widget {
+		ul {
+			list-style: none;
+			padding: 30px;
+			@media (max-width:575px) {
+				padding: 30px 20px;
+			}
+		}
+
+		ul li {
+			font-size: 19px;
+			position: relative;
+
+			@include media-query(767px) {
+				font-size: 16px;
+			}
+
+			span {
+				position: absolute;
+				right: 0;
+			}
+		}
+
+		ul>li+li {
+			margin-top: 12px;
+			padding-top: 12px;
+		}
+
+		ul a {
+			display: block;
+			color: #525252;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 30px;
+
+			span {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				background-color: $section-bg-color;
+				text-align: center;
+				border-radius: 50%;
+
+				@include media-query(767px) {
+					font-size: 14px;
+				}
+			}
+		}
+
+		ul a:hover,
+		ul li:hover:before {
+			color: $theme-primary-color;
+		}
+	}
+
+
+	/*** recent-post-widget ***/
+	.recent-post-widget {
+		.post {
+			overflow: hidden;
+		}
+
+		.posts {
+			padding: 30px;
+			@media (max-width:575px) {
+				padding: 30px 20px;
+			}
+		}
+
+		.posts>.post+.post {
+			margin-top: 15px;
+			padding-top: 15px;
+		}
+
+		.post .img-holder {
+			width: 90px;
+			float: left;
+
+			img {}
+		}
+
+		.post .details {
+			width: calc(100% - 90px);
+			float: left;
+			padding-left: 20px;
+		}
+
+		.post h4 {
+			margin: 0 0 0.3em;
+			color: #000;
+			font-family: $base-font;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 30px;
+
+			@include media-query(1199px) {
+				margin: 0;
+			}
+
+			@include media-query(767px) {
+				font-size: 16px;
+			}
+		}
+
+		.post h4 a {
+			display: inline-block;
+			color: $black;
+		}
+
+		.post h4 a:hover {
+			color: #666;
+		}
+
+		.post .details .date {
+			color: $text-color;
+			color: #666;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+
+			i {
+				display: inline-block;
+				padding-right: 7px;
+			}
+		}
+	}
+
+
+	/*** tag-widget ***/
+	.tag-widget {
+
+		ul {
+			overflow: hidden;
+			list-style: none;
+			padding: 30px;
+		}
+
+		ul li {
+			float: left;
+			margin: 0 8px 8px 0;
+		}
+
+		ul li a {
+			display: inline-block;
+			padding: 5px 16px;
+			color: #626B72;
+			text-align: center;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 30px;
+			border: 1px solid #E2E2E2;
+			text-transform: capitalize;
+		}
+
+		ul li a:hover {
+			background: #707070;
+			color: $white;
+		}
+	}
+
+
+}
+
+
+
+
+

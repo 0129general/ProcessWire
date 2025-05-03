@@ -1,0 +1,231 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name: Bliize | Architecture Construction HTML Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+	2.1 topbar
+	2.2 navigation
+
+3. content
+	3.1 wpo-hero-slider
+	3.2 wpo-about-section
+	3.3 wpo-project-section
+	3.4 wpo-service-section
+	3.5 wpo-funfact-section
+	3.6 wpo-testimonial-section
+	3.7 wpo-team-section
+	3.8 wpo-partners-section
+
+4. wpo-footer
+
+5. Home-style-2
+   5.1 wpo-about-section-s2
+   5.2 wpo-project-section-s2
+   5.3 wpo-service-section-s2
+   5.4 wpo-blog-section
+
+6. Home-style-3
+   6.1 wpo-about-section-s3
+   6.2 wpo-project-section-s3
+   6.3 wpo-service-section-s3
+   6.4 wpo-testimonial-section-s2
+   6.5 wpo-pricing-section
+
+7. Home-style-4
+   7.1 wpo-marqu-section
+   7.2 wpo-about-section-s4
+   7.3 wpo-classic-interior-design
+   7.4 wpo-work-section
+   7.5 wpo-service-section-s4
+   7.6 wpo-project-section-s4
+   7.7 wpo-testimonial-section-s3
+   7.8 wpo-blog-section-s2
+
+8. Home-style-5
+   8.1 wpo-service-section-s5
+   8.2 wpo-about-section-s5
+   8.3 wpo-video-section
+   8.4 wpo-project-section-s5
+   8.5 wpo-testimonial-section-s4
+   8.6 wpo-cta-section
+   8.7 wpo-partners-section-s2
+
+9. Home-style-6
+   9.1 wpo-about-section-s6
+   9.2 wpo-products-section
+   9.3 wpo-service-section-s6
+   9.4 wpo-project-section-s6
+   9.5 wpo-work-section-s2
+   9.6 wpo-instagram-section
+   9.7 wpo-blog-section-s6
+
+10. Home-style-7
+   10.1 wpo-about-section-s7
+   10.2 wpo-service-section-s7
+   10.3 wpo-project-section-s7
+   10.4 wpo-testimonial-section-s5
+   10.5 wpo-funfact-section-s6
+   10.6 wpo-cta-section-s2
+
+11. Home-style-8
+   11.1 wpo-service-section-s8
+   11.2 wpo-project-section-s8
+   11.3 wpo-work-section-s3
+   11.4 wpo-testimonial-section-s6
+   11.5 wpo-team-section-s2
+   11.6 wpo-cta-section-s3
+
+12. Home-style-9
+   12.1 wpo-category-section
+   12.2 wpo-project-section-s9
+   12.3 wpo-product-section
+   12.4 wpo-offer-section
+
+13. Home-style-10
+   13.1 wpo-product-cetegory-section
+   13.2 wpo-product-section-s2
+   13.3 wpo-offer-section-s2
+
+14. Home-style-11
+   14.1 wpo-service-section-s9
+   14.2 wpo-project-section-s10
+   14.3 wpo-funfact-section-s11
+   14.4 wpo-testimonial-section-s11
+   14.5 wpo-consultaForm-section
+
+15. Home-style-12
+   15.1 wpo-about-section-s12
+   15.2 wpo-service-section-s12
+   15.3 wpo-project-section-s12
+   15.4 wpo-testimonial-section-s12
+   15.5 wpo-team-section-s12
+   15.6 wpo-cta-section-s4
+   15.7 wpo-blog-section-s12
+
+16. Home-style-13
+   16.1 wpo-service-section-s13
+   16.2 wpo-about-section-s13
+   16.3 wpo-project-section-s13
+   16.4 wpo-testimonial-section-s13
+   16.5 wpo-blog-section-s13
+
+17. Home-style-14
+   17.1 wpo-partners-section
+   17.2 wpo-service-section-s14
+   17.3 wpo-project-section-s14
+   17.4 wpo-funfact-section-s14
+   17.5 wpo-faq-section
+   17.6 wpo-consultaForm-section-s2
+
+ 18. Home-style-15
+   18.1 wpo-about-section-s15
+   18.2 wpo-service-section-s15
+   18.3 wpo-project-section-s15
+   18.4 wpo-team-section-s15
+   18.5 wpo-consultaForm-section-s3
+
+
+
+
+19. project-single-page
+
+20. service-single-page
+
+21. wpo-teame-page
+
+22. wpo-blog-pg-section
+
+23. wpo-blog-single-section
+
+24. wpo-shop-single-page
+
+25. wpo-cart-page-style
+
+26. wpo-checkout-page-style
+
+27. login-design
+
+28. contact-pg-section
+
+29. pf-terms-section
+
+30. error-404-section
+
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/home-style-4";
+@import "page/home-style-5";
+@import "page/home-style-6";
+@import "page/home-style-7";
+@import "page/home-style-8";
+@import "page/home-style-9";
+@import "page/home-style-10";
+@import "page/home-style-11";
+@import "page/home-style-12";
+@import "page/home-style-13";
+@import "page/home-style-14";
+@import "page/home-style-15";
+
+
+@import "page/project-single";
+@import "page/service-single";
+@import "page/team-single";
+
+@import "page/_blog";
+@import "page/_blog-single";
+
+@import "page/shop-single";
+@import "page/cart";
+@import "page/checkout";
+@import "page/auth-page";
+@import "page/contact";
+@import "page/terms";
+@import "page/error-404";

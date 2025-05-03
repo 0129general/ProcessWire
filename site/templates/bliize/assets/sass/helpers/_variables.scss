@@ -1,0 +1,53 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+/* https: //transfonter.org/ */
+
+@font-face {
+  font-family: 'Felidae';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Felidae Regular'),
+  url('../fonts/felidae-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Felidae';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Felidae Regular'),
+  url('../fonts/felidae-regular.woff2') format('woff2');
+}
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font: "DM Sans",serif;
+$heading-font: 'Felidae';
+$heading-font-s2: "Space Grotesk",sans-serif;
+
+
+
+
+// color
+$dark-gray: #070143;
+$body-color: #687693;
+$white: #fff;//
+$light: #8188a9;
+$black: #000;//
+$small-black: #333;
+$cyan: #848892;
+
+$theme-primary-color: #e3b576;
+$theme-primary-color-s2: #071e93;
+$body-bg-color: #fff;
+$section-bg-color: #fafbfe;
+$text-color: #565656;//
+$text-light-color: #676767;
+$heading-color: $dark-gray;
+$border-color: #ebebeb;
+$border-color-s2: #d8e0f1;

@@ -1,0 +1,296 @@
+/* 18. Home-style-15 */
+
+
+/*--------------------------------------------------------------
+                18.1 wpo-about-section-s15
+--------------------------------------------------------------*/
+.wpo-about-section-s15 {
+    border-top: 1px solid #D9D9D9;
+
+    .wraper {
+        max-width: 1649px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width:1649px) {
+            padding: 0 10px;
+        }
+
+        @media (max-width:991px) {
+            padding: 0 10px;
+            flex-direction: column;
+        }
+    }
+
+    .about-left {
+        max-width: 746px;
+        max-height: 746px;
+        border-radius: 476px;
+        margin-right: 20px;
+
+        @media (max-width:991px) {
+            max-width: 480px;
+            max-height: 480px;
+            border-radius: 480px;
+            margin-right: 0px;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .about-right {
+        max-width: 736px;
+
+        @media (max-width:1399px) {
+            max-width: 536px;
+        }
+
+        @media (max-width:1199px) {
+            max-width: 480px;
+        }
+
+        .content {
+
+            h3 {
+                color: #000;
+                font-size: 20px;
+                font-weight: 400;
+                border-radius: 20px;
+                background: #F9F9F9;
+                display: inline-block;
+                padding: 5px 18px;
+                margin-bottom: 20px;
+                font-family: $base-font;
+            }
+
+            h2 {
+                color: #000;
+                font-family: $heading-font-s2;
+                font-size: 70px;
+                font-weight: 700;
+                margin-bottom: 30px;
+
+                @media (max-width:1399px) {
+                    font-size: 50px;
+                    line-height: 70px;
+                }
+
+                @media (max-width:1199px) {
+                    font-size: 45px;
+                    line-height: 60px;
+                    margin-bottom: 20px;
+                }
+
+                @media (max-width:991px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                }
+
+            }
+
+            p {
+                color: $black;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 40px;
+
+                @media (max-width:575px) {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+
+            .about-btn {
+                display: flex;
+                align-items: center;
+                max-width: 480px;
+                margin-top: 40px;
+
+                @media (max-width:991px) {
+                    margin-top: 20px;
+                }
+
+                @media (max-width:575px) {
+                    display: block;
+                    margin-top: 34px;
+                }
+
+                .theme-btn {
+                    background: $black;
+                    text-transform: none;
+                    border-radius: 35px;
+
+                    .rolling-text {
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            .video-wrap {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+
+                @media (max-width:575px) {
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+
+                span {
+                    padding-left: 20px;
+                }
+            }
+        }
+
+    }
+}
+
+
+/*--------------------------------------------------------------
+                18.2 wpo-service-section-s15
+--------------------------------------------------------------*/
+.wpo-service-section-s15 {
+    border: 1px solid rgb(200, 200, 200, 0.6);
+    border-left: 0;
+    border-right: 0;
+
+    .title {
+
+        max-width: 949px;
+
+        h3 {
+            font-size: 100px;
+
+            @media (max-width:1499px) {
+                font-size: 80px;
+            }
+
+            @media (max-width:1399px) {
+                font-size: 60px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 45px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+
+
+/*--------------------------------------------------------------
+                18.3 wpo-project-section-s15
+--------------------------------------------------------------*/
+.wpo-project-section-s15 {
+    border-top: transparent;
+
+    .title {
+
+
+
+        h3 {
+            color: #000;
+            font-family: $heading-font-s2;
+            font-size: 65px;
+            margin-bottom: 20px;
+            font-weight: 700;
+
+            @media (max-width:1650px) {
+                font-size: 60px;
+            }
+
+            @media (max-width:1499px) {
+                font-size: 40px;
+            }
+
+
+
+            @media (max-width:991px) {
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            margin-bottom: 20px;
+
+
+            @media (max-width:1199px) {
+                font-size: 18px;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+                18.4 wpo-team-section-s15
+--------------------------------------------------------------*/
+.wpo-team-section-s15 {
+    padding-top: 145px;
+
+    @media (max-width:991px) {
+        padding-top: 100px;
+    }
+
+    @media (max-width:767px) {
+        padding-top: 90px;
+    }
+
+    .team-wrap {
+        max-width: 1720px;
+        margin: 0 auto;
+    }
+
+}
+
+/*--------------------------------------------------------------
+                18.5 wpo-consultaForm-section-s3
+--------------------------------------------------------------*/
+.wpo-consultaForm-section-s3 {
+
+    .wraper {
+        max-width: 100%;
+        padding: 100px 100px;
+        padding-right: 300px;
+
+        @media (max-width:991px) {
+            padding: 20px 20px;
+        }
+
+        @media (max-width:575px) {
+            padding: 10px;
+        }
+    }
+
+    .contact {
+        margin-left: auto;
+
+        @media (max-width:575px) {
+            padding: 40px 10px;
+        }
+    }
+    .contact-validation-active .shop-btn {
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,8 @@
+2025-04-30 03:57:27	guest	http://localhost/http404/	Installed module 'ProcessRecentPages'
+2025-04-30 03:57:28	guest	http://localhost/http404/	Installed module 'AdminThemeUikit'
+2025-04-30 03:59:39	guest	http://localhost/http404/	Installed module 'ProcessLogger'
+2025-04-30 03:59:39	guest	http://localhost/http404/	Installed module 'InputfieldIcon'
+2025-04-30 04:12:16	seed	http://localhost/skksadmin/setup/template/edit?id=43	Installed module 'InputfieldTextTags'
+2025-05-02 09:13:02	seed	http://localhost/skksadmin/setup/field/add	Installed module 'InputfieldPageAutocomplete'
+2025-05-02 12:42:35	seed	http://localhost/skksadmin/setup/field/edit?id=98	Installed module 'InputfieldToggle'
+2025-05-03 05:14:34	seed	http://localhost/skksadmin/module/	Installed module 'PagePathHistory'

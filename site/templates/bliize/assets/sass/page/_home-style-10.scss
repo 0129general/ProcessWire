@@ -1,0 +1,395 @@
+/* 13. Home-style-10 */
+
+/*--------------------------------------------------------------
+                13.1 wpo-product-cetegory-section
+--------------------------------------------------------------*/
+.wpo-product-cetegory-section {
+    padding: 30px 0;
+    border-bottom: 1px solid #DDD;
+
+    .row {
+        margin: -1.5px;
+    }
+
+    .col {
+        &:nth-child(2) {
+            .product-card {
+                background: #E6F0F4;
+            }
+        }
+
+        &:last-child {
+            .product-card {
+                background: #F8EAE7;
+            }
+        }
+    }
+}
+
+.product-card {
+    background: #F2F1E7;
+    margin: 1.5px;
+    text-align: center;
+    padding: 48px;
+
+    @media (max-width:1450px) {
+        padding: 35px 20px;
+    }
+
+    h2 {
+        margin-bottom: 0;
+
+        a {
+            color: $black;
+            font-family: $heading-font;
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 80px;
+
+            @media (max-width:1399px) {
+                font-size: 40px;
+                line-height: 70px;
+            }
+
+            @media (max-width:1199px) {
+                font-size: 35px;
+                line-height: 50px;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        margin-bottom: 10px;
+
+        a {
+            color: $black;
+            font-family: $base-font;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 50px;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+                13.2 wpo-product-section-s2
+--------------------------------------------------------------*/
+.wpo-product-section-s2 {
+
+    .title {
+        display: block;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+
+        h2 {
+            max-width: 100%;
+            font-family: $heading-font;
+            font-size: 120px;
+            font-weight: 400;
+            line-height: 150px;
+        }
+
+        p {
+            max-width: 100%;
+            max-width: 828px;
+            margin: 0 auto;
+        }
+    }
+
+
+    .shop-card {
+        margin-bottom: 75px;
+
+        .image {
+            img {
+                background: #F9F9F9;
+                width: auto;
+            }
+        }
+    }
+
+
+    .project-allBtn {
+        margin-top: 0px;
+    }
+
+}
+
+
+/*--------------------------------------------------------------
+                13.3 wpo-offer-section-s2
+--------------------------------------------------------------*/
+.wpo-offer-section-s2 {
+
+    .offer-wraper {
+        max-width: 1734px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width:1199px) {
+            align-items: flex-start;
+        }
+
+        @media (max-width:991px) {
+            flex-direction: column;
+        }
+    }
+
+    .offer-left,
+    .offer-right {
+        width: 50%;
+        background: #F5F5F5;
+        margin: 0 7px;
+        display: flex;
+        align-items: center;
+        padding: 70px 50px;
+        padding-left: 30px;
+        height: 575px;
+
+        @media (max-width:1399px) {
+            padding: 40px 20px;
+        }
+
+        @media (max-width:1199px) {
+            flex-direction: column;
+            height: 100%;
+            align-items: flex-end;
+        }
+
+        @media (max-width:991px) {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width:767px) {
+            padding: 30px 10px;
+        }
+
+        .image {
+            width: calc(100% - 420px);
+
+            @media (max-width:1399px) {
+                width: calc(100% - 320px);
+            }
+
+            @media (max-width:1199px) {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .contnet {
+            max-width: 420px;
+            text-align: right;
+
+            @media (max-width:1399px) {
+                max-width: 320px;
+            }
+
+            @media (max-width:1199px) {
+                max-width: 100%;
+
+            }
+
+            h2 {
+                margin-bottom: 0;
+
+                a {
+                    color: #000;
+                    font-family: $heading-font;
+                    font-size: 60px;
+                    font-weight: 400;
+                    line-height: 80px;
+
+                    @media (max-width:1399px) {
+                        font-size: 50px;
+                        line-height: 60px;
+                    }
+
+                    @media (max-width:767px) {
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                }
+            }
+
+            .reting {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-bottom: 10px;
+
+                li {
+                    display: inline-block;
+
+                    span {
+                        color: #000;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 40px;
+                        padding-left: 10px;
+                    }
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            span {
+                color: #000;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 50px;
+
+                @media (max-width:767px) {
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+            }
+
+            .dat {
+                color: #AAA;
+                padding-left: 20px;
+            }
+
+            .shop-btn {
+                border-radius: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+
+
+    .offer-right {
+        background: #F2F1E7;
+        align-items: flex-end;
+        padding: 70px 50px;
+        padding-right: 30px;
+
+        @media (max-width:1199px) {
+            align-items: flex-start;
+            flex-direction: column-reverse;
+        }
+
+        @media (max-width:1399px) {
+            padding: 40px 20px;
+        }
+
+        @media (max-width:767px) {
+            padding: 30px 10px;
+        }
+
+        .image {
+            width: calc(100% - 290px);
+
+            @media (max-width:1199px) {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+        }
+
+        .contnet {
+            text-align: left;
+            max-width: 290px;
+
+            @media (max-width:1199px) {
+                max-width: 100%;
+            }
+
+            h2 {
+                a {
+                    color: #233D50;
+                    font-size: 55px;
+
+                    @media (max-width:1399px) {
+                        font-size: 45px;
+                    }
+
+                    @media (max-width:767px) {
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                }
+            }
+
+            .shop-btn {
+                background: transparent;
+                border: 1px solid $black;
+                color: $black;
+            }
+        }
+    }
+
+    .offer-time {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        max-width: 400px;
+        margin-left: auto;
+
+        @media (max-width:1199px) {
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 90px;
+            border: 2px solid #FFF;
+            background: rgba(255, 255, 255, 0.50);
+            text-align: center;
+            padding: 10px;
+
+            @media (max-width:1399px) {
+                width: 75px;
+            }
+
+            @media (max-width:767px) {
+                width: 60px;
+                padding: 5px;
+            }
+
+            .time {
+                color: #233D50;
+                font-family: $heading-font;
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 50px;
+
+                @media (max-width:1399px) {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+
+                @media (max-width:767px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+
+            span {
+                color: #233D50;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 20px;
+
+                @media (max-width:767px) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,359 @@
+/* 14. Home-style-11 */
+
+/*--------------------------------------------------------------
+                14.1 wpo-service-section-s9
+--------------------------------------------------------------*/
+
+.wpo-service-section-s9 {
+    max-width: 1730px;
+    margin: 0 auto;
+    padding-bottom: 90px;
+
+    @media (max-width:991px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width:767px) {
+        padding-bottom: 50px;
+    }
+
+    .title {
+        max-width: 959px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 60px;
+
+        span{
+              color: #000;
+              font-size: 20px;
+              font-weight: 400;
+              border-radius: 20px;
+              background: #F9F9F9;
+              display: inline-block;
+              padding: 5px 18px;
+              margin-bottom: 20px;
+              font-family: $base-font;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 100px;
+
+            @media (max-width:991px) {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 60px;
+                line-height: 70px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+
+        p {
+            color: #000;
+            font-size: 20px !important;
+            font-weight: 400;
+            line-height: 30px;
+            max-width: 784px;
+            margin: 0 auto;
+        }
+    }
+
+    .service-card {
+        margin: 0 9px;
+        margin-bottom: 30px;
+
+        @media (max-width:1399px) {
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+         h2 a {
+            font-size: 30px;
+            line-height: 40px;
+            @media (max-width:1399px) {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+                14.2 wpo-project-section-s10
+--------------------------------------------------------------*/
+.wpo-project-section-s10 {
+    background: $white;
+
+    .title {
+        max-width: 959px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 60px;
+        display: block;
+
+        h2 {
+            color: #000;
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 100px;
+            margin: 0 auto;
+
+            @media (max-width:991px) {
+                font-size: 80px;
+                line-height: 80px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 60px;
+                line-height: 70px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 50px;
+                line-height: 60px;
+            }
+        }
+
+        p {
+            max-width: 941px;
+            margin: 0 auto;
+            color: #666;
+            font-size: 35px;
+            font-weight: 400;
+            line-height: 50px;
+
+            @media (max-width:991px) {
+                font-size: 30px;
+            }
+
+            @media (max-width:767px) {
+                font-size: 25px;
+                line-height: 35px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .item {
+        position: relative;
+        overflow: hidden;
+        z-index: 11;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            content: '';
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+            height: 400px;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+        }
+
+        .content {
+            text-align: left;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 100%;
+            padding: 30px 40px;
+            padding-top: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s ease-in-out;
+
+            @media (max-width:767px) {
+                padding: 20px 20px;
+            }
+
+            span {
+                color: $white;
+            }
+        }
+
+    }
+
+    .swiper-slide.swiper-slide-active {
+        .item {
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .content {
+                opacity: 1;
+                visibility: visible;
+            }
+
+        }
+    }
+
+}
+
+
+/*--------------------------------------------------------------
+                14.3 wpo-funfact-section-s11
+--------------------------------------------------------------*/
+.wpo-funfact-section-s11 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+                14.4 wpo-testimonial-section-s11
+--------------------------------------------------------------*/
+
+.wpo-testimonial-section-s11 {
+    border: 0;
+
+    .testimonial-slider-s3 {
+        padding-top: 150px;
+        border-top: 1px solid rgb(51, 51, 51, 0.2);
+
+        @media (max-width:991px) {
+            padding-top: 90px;
+        }
+
+        @media (max-width:767px) {
+            padding-top: 80px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+                14.5 wpo-consultaForm-section
+--------------------------------------------------------------*/
+.wpo-consultaForm-section,
+.wpo-consultaForm-section-s3 {
+    .wraper {
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 100px 100px;
+
+        @media (max-width:767px) {
+            padding: 20px 20px;
+        }
+
+        @media (max-width:575px) {
+            padding: 0px;
+        }
+    }
+
+    .contact {
+        max-width: 600px;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.95);
+        display: block;
+
+        @media (max-width:767px) {
+            max-width: 100%;
+        }
+
+        @media (max-width:575px) {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 50px;
+            font-weight: 400;
+            line-height: 65px;
+            margin-bottom: 20px;
+
+            @media (max-width:767px) {
+                font-size: 40px;
+            }
+
+            @media (max-width:575px) {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .contact-validation-active {
+        position: relative;
+
+        div {
+            position: relative;
+        }
+
+        label {
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        .form-control {
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #B6B6B6;
+            border-radius: 0;
+            margin-bottom: 12px;
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 0;
+
+            &:focus {
+                box-shadow: 0 0 0 .25rem transparent;
+            }
+
+            &::placeholder {
+                color: $black;
+            }
+        }
+
+        label.error {
+            font-size: 15px;
+            margin: 0;
+            color: red;
+            position: absolute;
+            bottom: -23px;
+        }
+
+        .clearfix.error-handling-messages {
+            position: absolute;
+            bottom: -35px;
+
+            @media (max-width:499px) {
+                bottom: -60px;
+            }
+        }
+
+        .shop-btn {
+            border-radius: 0;
+            border: 0;
+            margin-top: 30px;
+        }
+    }
+
+
+}
