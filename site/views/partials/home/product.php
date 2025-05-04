@@ -22,7 +22,7 @@
                   <div class="col col-lg-3 col-md-6 col-12 fade_bottom">
                       <div class="shop-card">
                           <div class="image">
-                              <img src="<?= $assets ?>/images/shop/<?= $place['img'] ?>" alt="<?= htmlspecialchars($place['title']) ?>">
+                              <img src="<?= $assets ?>/images/home/<?= $place['img'] ?>" alt="<?= htmlspecialchars($place['title']) ?>">
                           </div>
                           <div class="content">
                               <h2><a href="<?= $place['link'] ?>"><?= $place['title'] ?></a></h2>

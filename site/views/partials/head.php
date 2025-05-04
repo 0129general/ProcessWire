@@ -5,7 +5,7 @@
     <meta name="author" content="wpOceans">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <title>SKKS | Nordheide GbR</title>
-    <?php $assets = $config->urls->templates . 'bliize/assets'; ?>
+    <?php $assets = $config->urls->templates . 'assets'; ?>
 
     <link href="<?= $assets ?>/css/themify-icons.css" rel="stylesheet">
     <link href="<?= $assets ?>/css/flaticon.css" rel="stylesheet">

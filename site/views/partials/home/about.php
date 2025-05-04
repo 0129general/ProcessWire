@@ -72,10 +72,10 @@
 
      <div class="image">
          <div class="image-1 poort-in-right">
-             <img src="<?= $assets ?>/images/about/building_1.png" width="711" height="1037" alt="">
+             <img src="<?= $assets ?>/images/home/building_1.png" width="711" height="1037" alt="">
          </div>
          <div class="image-2 poort-in-right">
-             <img src="<?= $assets ?>/images/about/bathroom_1.png" width="520" height="800" alt="">
+             <img src="<?= $assets ?>/images/home/bathroom_1.png" width="520" height="800" alt="">
          </div>
      </div>
  </section>

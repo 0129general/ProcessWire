@@ -1,15 +1,9 @@
-<?php namespace ProcessWire; 
+<?php
 
-// Template file for pages using the “basic-page” template
-// -------------------------------------------------------
-// The #content div in this file will replace the #content div in _main.php
-// when the Markup Regions feature is enabled, as it is by default. 
-// You can also append to (or prepend to) the #content div, and much more. 
-// See the Markup Regions documentation:
-// https://processwire.com/docs/front-end/output/markup-regions/
+require_once $config->paths->site . 'controllers/ProjectsController.php';
 
-?>
+$controller = new ProjectsController();
+$data = $controller->index($page);
 
-<div id="content">
-	single project page content 
-</div>	
+extract($data);
+include($config->paths->site . 'views/project-single.view.php');

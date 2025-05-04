@@ -3,7 +3,7 @@
      <div class="container-fluid p-0">
          <div class="service-top">
              <div class="image">
-                 <img src="<?= $assets ?>/images/service/room_1.png" alt="service-bg">
+                 <img src="<?= $assets ?>/images/home/room_1.png" alt="service-bg">
              </div>
              <div class="content">
                  <h2 class="poort-text poort-in-right"></h2>
@@ -27,9 +27,9 @@
                      <div class="col-lg-3 col-md-6 col-12 fade_bottom">
                          <div class="service-card">
                              <div class="icon">
-                                 <img src="<?= $assets ?>/images/service/icon/<?= $service['icon'] ?>" alt="icon" width="45" height="45">
+                                 <img src="<?= $assets ?>/images/home/<?= $service['icon'] ?>" alt="icon" width="45" height="45">
                              </div>
-                             <h2><a href="<?= $pages->get('/service-single/')->url ?>"><?= $service['title'] ?></a></h2>
+                             <h2><a href="#"><?= $service['title'] ?></a></h2>
                              <p><?= $service['content'] ?></p>
                          </div>
                      </div>

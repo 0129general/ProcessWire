@@ -15,8 +15,8 @@
             foreach ($projects as $project):
             ?>
                 <div class="project-card fade_bottom">
-                    <img src="<?= $assets ?>/images/project/project-1/<?= $project['img'] ?>" width=" <?= $project['width'] ?>" height=" <?= $project['height'] ?>" alt="project-1">
-                    <img src="<?= $assets ?>/images/project/project-1/<?= $project['img'] ?>" width=" <?= $project['width'] ?>" height=" <?= $project['height'] ?>" alt="project-1">
+                    <img src="<?= $assets ?>/images/home/<?= $project['img'] ?>" width=" <?= $project['width'] ?>" height=" <?= $project['height'] ?>" alt="project-1">
+                    <img src="<?= $assets ?>/images/home/<?= $project['img'] ?>" width=" <?= $project['width'] ?>" height=" <?= $project['height'] ?>" alt="project-1">
                     <div class="content">
                         <h2><a href="<?= $pages->get('/project-single/')->url ?>"><?= $project['title'] ?></a></h2>
                         <span>Gebouw, kamer</span>

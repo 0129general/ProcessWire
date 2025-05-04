@@ -16,10 +16,10 @@
                 <div class="col">
                     <div class="team-card">
                         <div class="image">
-                            <img src="<?= $assets ?>/images/team/<?= $member['img'] ?>" alt="team">
-                            <img src="<?= $assets ?>/images/team/<?= $member['img'] ?>" alt="team">
+                            <img src="<?= $assets ?>/images/home/<?= $member['img'] ?>" alt="team">
+                            <img src="<?= $assets ?>/images/home/<?= $member['img'] ?>" alt="team">
                         </div>
-                        <h2><a href="<?= $pages->get('/team-single/')->url ?>">
+                        <h2><a href="#">
                                 <span class="rolling-text"><?= $member['name'] ?></span></a>
                         </h2>
                         <span><?= $member['role'] ?></span>

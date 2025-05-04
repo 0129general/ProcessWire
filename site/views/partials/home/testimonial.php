@@ -11,12 +11,12 @@
             ?>
               <div class="item">
                   <div class="bg-image">
-                      <img src="<?= $assets ?>/images/testimonial/<?= $item['img'] ?>" alt="testimonial">
+                      <img src="<?= $assets ?>/images/home/<?= $item['img'] ?>" alt="testimonial">
                   </div>
                   <div class="content fade_bottom">
-                      <div class="icon">
+                      <!-- <div class="icon">
                           <img src="<?= $assets ?>/images/testimonial/quote.svg" alt="quote">
-                      </div>
+                      </div> -->
                       <h3>
                           Ac sollicitudin euismod ut luctus felis lacus sed pellentesque. Purus eget consectur massa amet.
                           Hac diam suspendisse faucibus posuere dignissim magna condimentum tristique.
