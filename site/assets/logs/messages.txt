@@ -1,2 +1,8 @@
 2025-05-03 06:20:12	seed	http://localhost/skksadmin/page/sort/	Updated sort for 3 pages
 2025-05-03 06:20:29	seed	http://localhost/skksadmin/page/sort/	Updated sort for 3 pages
+2025-05-12 06:40:34	seed	http://localhost/skksadmin/module/	Populated initial created/modified dates for 'language_files_site'
+2025-05-12 06:40:34	seed	http://localhost/skksadmin/module/	Populated initial created/modified dates for 'language_files'
+2025-05-12 13:19:22	seed	http://localhost/skksadmin/setup/field/edit?id=108	Populated initial created/modified dates for 'our_projects'
+2025-05-12 13:34:43	seed	http://localhost/skksadmin/setup/field/edit?id=108	Populated initial created/modified dates for 'about_image_left'
+2025-05-12 13:34:43	seed	http://localhost/skksadmin/setup/field/edit?id=108	Populated initial created/modified dates for 'about_image_right'
+2025-05-12 14:57:47	seed	http://localhost/skksadmin/setup/field/send-templates-save?id=120	Deleted field "about_section_block" data in 1 row(s) from 1 page(s) using template "home". [page-by-page]
