@@ -6,3 +6,6 @@
 2025-05-12 13:34:43	seed	http://localhost/skksadmin/setup/field/edit?id=108	Populated initial created/modified dates for 'about_image_left'
 2025-05-12 13:34:43	seed	http://localhost/skksadmin/setup/field/edit?id=108	Populated initial created/modified dates for 'about_image_right'
 2025-05-12 14:57:47	seed	http://localhost/skksadmin/setup/field/send-templates-save?id=120	Deleted field "about_section_block" data in 1 row(s) from 1 page(s) using template "home". [page-by-page]
+2025-05-12 16:35:20	seed	http://localhost/skksadmin/setup/field/edit?id=126	Populated initial created/modified dates for 'header_logo'
+2025-05-12 17:51:52	seed	http://localhost/skksadmin/setup/field/edit?id=134	Populated initial created/modified dates for 'landing_scroll_icon'
+2025-05-12 17:52:58	seed	http://localhost/skksadmin/setup/field/edit?id=131	Populated initial created/modified dates for 'landing_video'

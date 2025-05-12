@@ -1,17 +1,21 @@
 <section class="wpo-hero-slider">
   <div class="swiper-container">
     <div class="relative w-full h-screen overflow-hidden">
-      <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
-        <source src="<?= $assets ?>/videos/landing-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <?php if ($page->landing_video): ?>
+        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
+          <source src="<?= $page->landing_video->url ?>" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      <?php endif; ?>
     </div>
   </div>
 
-  <a href="#about" class="scroll-btn">
-    <span>Scroll For More</span>
+  <a href="<?= $page->landing_scroll_target ?>" class="scroll-btn">
+    <span><?= $page->landing_scroll_label ?></span>
     <div class="scroll-befor">
-      <img src="<?= $assets ?>/images/down-arrow.svg" alt="">
+      <?php if ($page->landing_scroll_icon): ?>
+        <img src="<?= $page->landing_scroll_icon->url ?>" alt="">
+      <?php endif; ?>
     </div>
   </a>
 </section>
