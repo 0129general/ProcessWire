@@ -94,3 +94,7 @@
 2025-05-13 03:08:59	seed	http://localhost/skksadmin/page/edit/?id=1&s=1&c=2	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
 2025-05-13 03:09:08	seed	http://localhost/skksadmin/page/edit/?id=1&s=1&c=2	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
 2025-05-13 03:09:08	seed	http://localhost/skksadmin/page/edit/?id=1&s=1&c=2	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 03:20:35	seed	http://localhost/	Method Pageimage::first does not exist or is not callable in this context (in E:\ProcessWire\processwire-master\wire\core\Wire.php line 563)
+2025-05-13 03:21:16	seed	http://localhost/skksadmin/page/edit/?id=1&s=1&c=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 03:21:17	seed	http://localhost/skksadmin/page/edit/?id=1&s=1&c=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 03:21:28	seed	http://localhost/	Method Pageimage::first does not exist or is not callable in this context (in E:\ProcessWire\processwire-master\wire\core\Wire.php line 563)
