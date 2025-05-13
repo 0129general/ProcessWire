@@ -15,3 +15,5 @@
 2025-05-13 06:17:28	seed	http://localhost/skksadmin/setup/field/edit?id=167	Populated initial created/modified dates for 'project_image'
 2025-05-13 07:27:03	seed	http://localhost/skksadmin/setup/field/edit?id=172	Populated initial created/modified dates for 'services_image'
 2025-05-13 07:30:08	seed	http://localhost/skksadmin/page/edit/?id=1&field=services_items&repeater_add=1	Populated initial created/modified dates for 'service_icon'
+2025-05-13 16:43:31	seed	http://localhost/skksadmin/setup/field/edit?id=184	Populated initial created/modified dates for 'founder_image'
+2025-05-13 16:44:02	seed	http://localhost/skksadmin/setup/field/edit?id=182	Populated initial created/modified dates for 'founder_logo'
