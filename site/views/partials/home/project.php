@@ -1,33 +1,28 @@
-<!--===== start wpo-project-section =====-->
 <section class="wpo-project-section section-padding">
-    <div class="container-fulid">
+    <div class="container-fluid">
         <div class="title">
-            <h2 class="poort-text poort-in-right">Onze projecten</h2>
+            <h2 class="poort-text poort-in-right"><?= $page->projects_heading ?></h2>
         </div>
         <div class="project-wrap">
-            <?php
-            $projects = [
-                ['img' => 'building_1.png', 'title' => 'Robust und schön: Klinker', 'width' => '740', 'height' => '560'],
-                ['img' => 'building_2.png', 'title' => 'Schöne Architektur', 'width' => '940', 'height' => '560'],
-                ['img' => 'building_3.png', 'title' => 'energie-efficiëntie', 'width' => '940', 'height' => '560'],
-                ['img' => 'bathroom_1.png', 'title' => 'wertige Ausstattung', 'width' => '740', 'height' => '560']
-            ];
-            foreach ($projects as $project):
-            ?>
+            <?php foreach ($page->project_items as $item): ?>
                 <div class="project-card fade_bottom">
-                    <img src="<?= $assets ?>/images/home/<?= $project['img'] ?>" width=" <?= $project['width'] ?>" height=" <?= $project['height'] ?>" alt="project-1">
-                    <img src="<?= $assets ?>/images/home/<?= $project['img'] ?>" width=" <?= $project['width'] ?>" height=" <?= $project['height'] ?>" alt="project-1">
+                    <img src="<?= $item->project_image->url ?>" width="<?= $item->project_width ?>" height="<?= $item->project_height ?>" alt="<?= $item->project_title ?>">
+                    <img src="<?= $item->project_image->url ?>" width="<?= $item->project_width ?>" height="<?= $item->project_height ?>" alt="<?= $item->project_title ?>">
                     <div class="content">
-                        <h2><a href="<?= $pages->get('/project-single/')->url ?>"><?= $project['title'] ?></a></h2>
-                        <span>Gebouw, kamer</span>
+                        <h2>
+                            <a href="<?= $item->project_link->url ?? '#' ?>">
+                                <?= $item->project_title ?>
+                            </a>
+                        </h2>
+                        <span><?= $item->project_category ?></span>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
         <div class="project-allBtn fade_bottom">
-            <a href="<?= $pages->get('/projects/')->url ?>" class="theme-btn">
-                <span class="rolling-text">Bekijk alle projecten</span>
-                <img src="<?= $assets ?>/images/right-arrow-2.svg" alt="">
+            <a href="<?= $page->projects_cta_link->url ?>" class="theme-btn">
+                <span class="rolling-text"><?= $page->projects_cta_label ?></span>
+                <img src="<?= $config->urls->templates ?>images/right-arrow-2.svg" alt="">
             </a>
         </div>
     </div>

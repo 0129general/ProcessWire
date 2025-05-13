@@ -12,3 +12,4 @@
 2025-05-12 18:29:59	seed	http://localhost/skksadmin/setup/field/edit?id=142	Populated initial created/modified dates for 'footer_logo'
 2025-05-13 03:08:02	seed	http://localhost/skksadmin/page/edit/?id=1&field=partner_logos&repeater_add=1	Populated initial created/modified dates for 'partner_logo_image'
 2025-05-13 05:49:25	seed	http://localhost/skksadmin/setup/field/edit?id=161	Populated initial created/modified dates for 'place_image'
+2025-05-13 06:17:28	seed	http://localhost/skksadmin/setup/field/edit?id=167	Populated initial created/modified dates for 'project_image'
