@@ -1,56 +1,27 @@
-<?php
-// Section title variables
-$sectionTagline = "Since 1994";
-$sectionHeading = "Transforming Spaces, Elevating Lives";
-
-// Project cards
-$projects = [
-    [
-        'image' => 'lives_1.jpg',
-        'title' => 'Office Renovation',
-        'category' => 'Building, Apartment',
-        'link' => $config->urls->root . 'project-single.php'
-    ],
-    [
-        'image' => 'lives_2.jpg',
-        'title' => 'Kitchen Renovation',
-        'category' => 'Building, Apartment',
-        'link' => $config->urls->root . 'project-single.php'
-    ],
-    [
-        'image' => 'lives_4.jpg',
-        'title' => 'Office Renovation',
-        'category' => 'Building, Apartment',
-        'link' => $config->urls->root . 'project-single.php'
-    ],
-    [
-        'image' => 'lives_3.jpg',
-        'title' => 'Corridor Renovation',
-        'category' => 'Building, Apartment',
-        'link' => $config->urls->root . 'project-single.php'
-    ]
-];
-?>
-
-<!--===== start wpo-project-section =====-->
 <section class="wpo-project-section-s8 section-padding pt-0">
-    <div class="container-fulid">
+    <div class="container-fluid">
         <div class="title">
-            <span class="poort-text poort-in-right"><?= $sectionTagline ?></span>
-            <h2 class="poort-text poort-in-right"><?= $sectionHeading ?></h2>
+            <span class="poort-text poort-in-right"><?= $page->fp_tagline ?></span>
+            <h2 class="poort-text poort-in-right"><?= $page->fp_heading ?></h2>
         </div>
         <div class="sortable-gallery">
             <div class="gallery-filters"></div>
             <div class="row gallery-container">
-                <?php foreach ($projects as $project): ?>
+                <?php foreach ($page->fp_projects as $item): ?>
                     <div class="col col-lg-6 col-12 scroll-text-animation" data-animation="fade_from_bottom">
                         <div class="project-card-s7">
                             <div class="image">
-                                <img src="<?= $assets ?>/images/projects/<?= $project['image'] ?>" alt="">
+                                <?php if ($item->fp_image): ?>
+                                    <img src="<?= $item->fp_image->url ?>" alt="">
+                                <?php endif; ?>
                             </div>
                             <div class="content">
-                                <h2><a href="<?= $project['link'] ?>"><?= $project['title'] ?></a></h2>
-                                <span><?= $project['category'] ?></span>
+                                <h2>
+                                    <a href="<?= $item->fp_link ?>">
+                                        <?= $item->fp_title ?>
+                                    </a>
+                                </h2>
+                                <span><?= $item->fp_category ?></span>
                             </div>
                         </div>
                     </div>

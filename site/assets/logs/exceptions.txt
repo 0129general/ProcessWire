@@ -154,3 +154,7 @@
 2025-05-13 17:02:01	seed	http://localhost/skksadmin/page/edit/?id=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
 2025-05-13 17:02:01	seed	http://localhost/skksadmin/page/edit/?id=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
 2025-05-13 17:02:01	seed	http://localhost/skksadmin/page/edit/?id=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 18:25:29	seed	http://localhost/skksadmin/page/edit/?id=1159&InputfieldFileAjax=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 18:25:59	seed	http://localhost/skksadmin/page/edit/?id=1160&InputfieldFileAjax=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 18:26:30	seed	http://localhost/skksadmin/page/edit/?id=1161&InputfieldFileAjax=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)
+2025-05-13 18:26:51	seed	http://localhost/skksadmin/page/edit/?id=1162&InputfieldFileAjax=1	There seems to be no support for the GD image library on your host? (in E:\ProcessWire\processwire-master\wire\core\ImageSizer.php line 449)

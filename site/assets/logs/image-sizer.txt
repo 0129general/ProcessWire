@@ -134,3 +134,7 @@
 2025-05-13 17:02:01	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/building_1.0x260.png - There seems to be no support for the GD image library on your host?
 2025-05-13 17:02:01	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/room_1.0x260.png - There seems to be no support for the GD image library on your host?
 2025-05-13 17:02:01	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/founder.0x260.jpg - There seems to be no support for the GD image library on your host?
+2025-05-13 18:25:29	seed	http://localhost/skksadmin/page/edit/?id=1159&InputfieldFileAjax=1	/site/assets/files/1159/lives_1.260x0.jpg - There seems to be no support for the GD image library on your host?
+2025-05-13 18:25:59	seed	http://localhost/skksadmin/page/edit/?id=1160&InputfieldFileAjax=1	/site/assets/files/1160/lives_2.260x0.jpg - There seems to be no support for the GD image library on your host?
+2025-05-13 18:26:30	seed	http://localhost/skksadmin/page/edit/?id=1161&InputfieldFileAjax=1	/site/assets/files/1161/lives_4.260x0.jpg - There seems to be no support for the GD image library on your host?
+2025-05-13 18:26:51	seed	http://localhost/skksadmin/page/edit/?id=1162&InputfieldFileAjax=1	/site/assets/files/1162/lives_3.260x0.jpg - There seems to be no support for the GD image library on your host?
