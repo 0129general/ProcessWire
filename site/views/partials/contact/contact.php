@@ -1,118 +1,85 @@
-<?php
-// Define PHP variables for dynamic content
-$address = "7 Green Lake Street Crawfordsville, IN 47933";
-$email1 = "bliize@gmail.com";
-$email2 = "bliize@gmail.com";
-$phone1 = "+1 800 123 456 789";
-$phone2 = "+1 800 123 654 987";
-$contactTitle = "Have Any Question?";
-$contactDescription = "It is a long established fact that a reader will be distracted content of a page when looking.";
-$services = ["Subject 1", "Subject 2", "Subject 3", "Subject 4"];
-
-// Content of tags as variables
-$addressTitle = "Address";
-$emailTitle = "Email Us";
-$callNowTitle = "Call Now";
-$servicesTitle = "Services";
-$formNamePlaceholder = "Your Name*";
-$formEmailPlaceholder = "Your Email*";
-$formAddressPlaceholder = "Address";
-$formMessagePlaceholder = "Message...";
-$formSubmitText = "Get in Touch";
-$thankYouMessage = "Thank you";
-$errorMessage = "Error occurred while sending email. Please try again later.";
-?>
-
-<!-- start wpo-contact-pg-section -->
 <section class="wpo-contact-pg-section section-padding pt-0">
     <div class="container">
         <div class="row">
             <div class="col col-lg-10 offset-lg-1">
                 <div class="office-info">
                     <div class="row">
+                        <!-- Address -->
                         <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
                             <div class="office-info-item">
-                                <div class="office-info-icon">
-                                    <div class="icon">
-                                        <i class="fi flaticon-placeholder"></i>
-                                    </div>
-                                </div>
+                                <div class="office-info-icon"><i class="fi flaticon-placeholder"></i></div>
                                 <div class="office-info-text">
-                                    <h2><?= $addressTitle ?></h2>
-                                    <p><?= $address ?></p>
+                                    <h2><?= $page->contact_address_title ?></h2>
+                                    <p><?= $page->contact_address_text ?></p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Email -->
                         <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
                             <div class="office-info-item">
-                                <div class="office-info-icon">
-                                    <div class="icon">
-                                        <i class="fi flaticon-email"></i>
-                                    </div>
-                                </div>
+                                <div class="office-info-icon"><i class="fi flaticon-email"></i></div>
                                 <div class="office-info-text">
-                                    <h2><?= $emailTitle ?></h2>
-                                    <p><?= $email1 ?></p>
-                                    <p><?= $email2 ?></p>
+                                    <h2><?= $page->contact_email_title ?></h2>
+                                    <p><?= $page->contact_email_1 ?></p>
+                                    <p><?= $page->contact_email_2 ?></p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Phone -->
                         <div class="col col-xl-4 col-lg-6 col-md-6 col-12">
                             <div class="office-info-item">
-                                <div class="office-info-icon">
-                                    <div class="icon">
-                                        <i class="fi flaticon-phone-call"></i>
-                                    </div>
-                                </div>
+                                <div class="office-info-icon"><i class="fi flaticon-phone-call"></i></div>
                                 <div class="office-info-text">
-                                    <h2><?= $callNowTitle ?></h2>
-                                    <p><?= $phone1 ?></p>
-                                    <p><?= $phone2 ?></p>
+                                    <h2><?= $page->contact_phone_title ?></h2>
+                                    <p><?= $page->contact_phone_1 ?></p>
+                                    <p><?= $page->contact_phone_2 ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Contact Form -->
                 <div class="wpo-contact-title">
-                    <h2><?= $contactTitle ?></h2>
-                    <p><?= $contactDescription ?></p>
+                    <h2><?= $page->contact_form_title ?></h2>
+                    <p><?= $page->contact_form_desc ?></p>
                 </div>
+
                 <div class="wpo-contact-form-area">
                     <form method="post" class="contact-validation-active" id="consultancy-form">
                         <div>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="<?= $formNamePlaceholder ?>">
+                            <input type="text" name="name" placeholder="<?= $page->form_name_placeholder ?>" class="form-control" />
                         </div>
                         <div>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="<?= $formEmailPlaceholder ?>">
+                            <input type="email" name="email" placeholder="<?= $page->form_email_placeholder ?>" class="form-control" />
                         </div>
                         <div>
-                            <input type="text" class="form-control" name="address" id="address" placeholder="<?= $formAddressPlaceholder ?>">
+                            <input type="text" name="address" placeholder="<?= $page->form_address_placeholder ?>" class="form-control" />
                         </div>
                         <div>
                             <select name="service" class="form-control">
-                                <option disabled="disabled" selected=""><?= $servicesTitle ?></option>
-                                <?php foreach ($services as $service) : ?>
-                                    <option><?= $service ?></option>
+                                <option disabled selected><?= $page->form_services_title ?></option>
+                                <?php foreach ($page->contact_services as $option): ?>
+                                    <option><?= $option->service_option ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
                         <div class="fullwidth">
-                            <textarea class="form-control" name="note" id="note" placeholder="<?= $formMessagePlaceholder ?>"></textarea>
+                            <textarea name="note" placeholder="<?= $page->form_message_placeholder ?>" class="form-control"></textarea>
                         </div>
                         <div class="submit-area">
-                            <button type="submit" class="theme-btn"><?= $formSubmitText ?></button>
-                            <div id="loader">
-                                <i class="ti-reload"></i>
-                            </div>
+                            <button type="submit" class="theme-btn"><?= $page->form_submit_text ?></button>
+                            <div id="loader"><i class="ti-reload"></i></div>
                         </div>
                         <div class="clearfix error-handling-messages">
-                            <div id="success"><?= $thankYouMessage ?></div>
-                            <div id="error"><?= $errorMessage ?></div>
+                            <div id="success"><?= $page->form_success_message ?></div>
+                            <div id="error"><?= $page->form_error_message ?></div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div> <!-- end container -->
+    </div>
 </section>
-<!-- end wpo-contact-pg-section -->
