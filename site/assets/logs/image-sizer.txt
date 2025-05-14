@@ -146,3 +146,12 @@
 2025-05-13 19:00:22	seed	http://localhost/skksadmin/page/edit/?id=1174&InputfieldFileAjax=1	/site/assets/files/1174/team_3.260x0.jpg - There seems to be no support for the GD image library on your host?
 2025-05-13 19:00:51	seed	http://localhost/skksadmin/page/edit/?id=1175&InputfieldFileAjax=1	/site/assets/files/1175/team_4.260x0.jpg - There seems to be no support for the GD image library on your host?
 2025-05-13 19:01:19	seed	http://localhost/skksadmin/page/edit/?id=1016&s=1&c=4	/site/assets/files/1016/work-image-s3.0x260.jpg - There seems to be no support for the GD image library on your host?
+2025-05-14 00:36:21	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/bathroom_1.0x260.png - There seems to be no support for the GD image library on your host?
+2025-05-14 00:36:21	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/building_1.0x260.png - There seems to be no support for the GD image library on your host?
+2025-05-14 00:36:21	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/room_1.0x260.png - There seems to be no support for the GD image library on your host?
+2025-05-14 00:36:21	seed	http://localhost/skksadmin/page/edit/?id=1	/site/assets/files/1/founder.0x260.jpg - There seems to be no support for the GD image library on your host?
+2025-05-14 04:52:09	seed	http://localhost/skksadmin/page/edit/?id=1016	/site/assets/files/1016/work-image-s3.0x260.jpg - There seems to be no support for the GD image library on your host?
+2025-05-14 04:53:16	seed	http://localhost/skksadmin/page/edit/?id=1016&s=1&c=2	/site/assets/files/1016/work-image-s3.0x260.jpg - There seems to be no support for the GD image library on your host?
+2025-05-14 04:53:49	seed	http://localhost/skksadmin/page/edit/?id=1016&s=1&c=0	/site/assets/files/1016/work-image-s3.0x260.jpg - There seems to be no support for the GD image library on your host?
+2025-05-14 06:16:04	seed	http://localhost/skksadmin/page/edit/?id=1017&InputfieldFileAjax=1	/site/assets/files/1017/construct.0x260.png - There seems to be no support for the GD image library on your host?
+2025-05-14 06:16:49	seed	http://localhost/skksadmin/page/edit/?id=1017&s=1&c=8	/site/assets/files/1017/construct.0x260.png - There seems to be no support for the GD image library on your host?
