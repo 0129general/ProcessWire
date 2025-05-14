@@ -22,3 +22,4 @@
 2025-05-13 18:39:16	seed	http://localhost/skksadmin/setup/field/edit?id=202	Populated initial created/modified dates for 'work_image'
 2025-05-13 18:59:31	seed	http://localhost/skksadmin/page/edit/?id=1016&field=team_members&repeater_add=1	Populated initial created/modified dates for 'member_image'
 2025-05-14 06:12:48	seed	http://localhost/skksadmin/setup/field/edit?id=212	Populated initial created/modified dates for 'about_image'
+2025-05-14 06:32:18	seed	http://localhost/skksadmin/page/edit/?id=1017&field=svc_s12_items&repeater_add=1	Populated initial created/modified dates for 'svc_item_image'
