@@ -16,9 +16,8 @@ namespace ProcessWire; ?>
         <?php include('partials/about/about.php'); ?>
         <?php include('partials/about/service.php'); ?>
         <?php include('partials/about/project.php'); ?>
-        <?php include('partials/about/testimonial.php'); ?>
-        <?php include('partials/about/team.php'); ?>
         <?php include('partials/about/blog.php'); ?>
+        <?php include('partials/about/team.php'); ?>
         <?php include('partials/footer.php'); ?>
     </div>
     <!--===== end page-wrapper =====-->

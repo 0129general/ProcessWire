@@ -1,58 +1,31 @@
-<?php
-// Define variables for the section content
-$section_title = "Discover Our Recent Projects";
-$section_subtitle = "Cum cras ultrices netus nulla nunc. Interdum duis pulvinar est potenti magna mus enim tincidunt. Erat metus vitae egestas nunc viverra.";
-
-// Define an array of projects with their details
-$projects = [
-    [
-        'name' => 'Kitchen Renovation',
-        'category' => 'Building, Apartment',
-        'image' => '/images/about/recent_pro_1.jpg',
-        'link' => 'project-single.html'
-    ],
-    [
-        'name' => 'Office Renovation',
-        'category' => 'Building, Apartment',
-        'image' => '/images/about/recent_pro_2.jpg',
-        'link' => 'project-single.html'
-    ],
-    [
-        'name' => 'Corridor Renovation',
-        'category' => 'Building, Apartment',
-        'image' => '/images/about/recent_pro_3.jpg',
-        'link' => 'project-single.html'
-    ]
-];
-
-// Background image
-$background_image = "$assets/images/about/project-bg.png";
-?>
-
-<!--===== start wpo-project-section =====-->
 <section class="wpo-project-section-s12">
     <div class="wraper">
         <div class="title">
-            <span>Portfolio</span>
-            <h2 class="poort-text poort-in-right"><?= $section_title ?></h2>
-            <p class="poort-text poort-in-right"><?= $section_subtitle ?></p>
+            <span><?= $page->recent_portfolio ?></span>
+            <h2 class="poort-text poort-in-right"><?= $page->recent_projects_title ?></h2>
+            <p class="poort-text poort-in-right"><?= $page->recent_projects_subtitle ?></p>
         </div>
+
         <div class="project-slider-s11 owl-carousel">
-            <?php foreach ($projects as $project): ?>
+            <?php foreach ($page->recent_projects_list as $project): ?>
                 <div class="item">
                     <div class="imgWrap">
-                        <img src="<?= $assets . $project['image'] ?>" alt="" class="x1">
+                        <?php if ($project->recent_project_image): ?>
+                            <img src="<?= $project->recent_project_image->url ?>" alt="" class="x1">
+                        <?php endif; ?>
                     </div>
                     <div class="content">
-                        <h2><a href="<?= $project['link'] ?>"><?= $project['name'] ?></a></h2>
-                        <span><?= $project['category'] ?></span>
+                        <h2><a href="<?= $project->recent_project_link ?>"><?= $project->recent_project_name ?></a></h2>
+                        <span><?= $project->recent_project_category ?></span>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
     </div>
-    <div class="bg-image">
-        <img src="<?= $background_image ?>" alt="">
-    </div>
+
+    <?php if ($page->recent_projects_background): ?>
+        <div class="bg-image">
+            <img src="<?= $page->recent_projects_background->url ?>" alt="">
+        </div>
+    <?php endif; ?>
 </section>
-<!--===== end wpo-project-section =====-->
